@@ -1,82 +1,124 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natalia - Desenvolvedor Web</title>
-    <link rel="stylesheet" type="text/css" href="Portfolio.css">
-</head>
-<body>
-    <div class="background-container">
-        <!-- Tabela no topo da página -->
-        <table class="container-table section-list">
-            <tr>
-                <td>Inicio</td>
-                <td>Sobre mim</td>
-                <td>Habilidades</td>
-                <td>Projetos</td>
-                <td>Contate-me</td>
-            </tr>
-        </table>
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333; /* Removendo a cor de fundo do body */
+/
+}
 
-        <!-- Conteúdo da página -->
-        <table class="container-table">
-            <tr>
-                <td>
-                    <!-- Imagem circular -->
-                    <img class="profile-image" src="fotodeperfil.jpg" alt="Foto de perfil">
-                </td>
-                <td>
-                    <div class="container">
-                        <div class="section-title">Oi, eu sou a Natalia</div>
-                        <div class="section-content">Uma desenvolvedora web que busca sempre se aprimorar e que almeja inovar a área de tecnologia.</div>
-                    </div>
-                </td>
-            </tr>
-        </table>
-        
-        <!-- Seções restantes... -->
-        <div class="container">
-            <div class="section-title">Sobre mim</div>
-            <div class="section-content">Muito esforçada e curiosa, estou sempre à procura de novos desafios e aventuras para estimular minha mente.</div>
-            
-            <div class="left-section">
-                <div class="highlight-section">Me conheça mais!</div>
-                <div class="section-content">
-                    <br>Ainda estou no início da minha jornada como desenvolvedora web, adentrando no mundo da programação. Comecei recentemente a me interessar por programação em si, embora sempre tenha sido muito ligada à área de tecnologia. Desde muito cedo tive facilidade em mexer com smartphones, computadores e video-games. Quando mais nova, me aventurei com outras áreas, como edificações e restaurante e bar; até perceber que na tecnologia é onde realmente me encontro.<br><br>
-                    Tenho somente 22 anos e cursei apenas 3 semestres do curso de Ciências da Computação na faculdade Estácio de Sá. <br>
-                    Estou aberta a oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Caso queira trocar alguma experiência, por favor entre em contato comigo através do meu email <strong>SantosNatalia2001@gmail.com </strong> ou do meu <a href="https://www.instagram.com/dsantosnat/">Instagram</a>
-                </div>
-            </div>
+.background-container {
+    background-color: #f0f0f0; /* Cor de fundo desejada */
+    padding: 20px; /* Adicione preenchimento conforme necessário */
+}
 
-            <div class="right-section">
-                <div class="highlight-section">Habilidades</div>
-                <div class="section-content">
-                    <p style="text-align: center;">HTML | JavaScript | CSS</p>
-                </div>
-            </div>
+.profile-image {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Torna a imagem circular */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
 
-            <div class="highlight-section">Projetos</div>
-            <div class="section-content">
-                <ol>
-                    <li><a href="index.html">Projeto 1</a></li>
-                </ol>
-            </div>
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-            <div class="highlight-section contact-section">
-                <div class="section-title">Contate-me</div>
-                <div class="section-content">
-                    <br>
-                    Sinta-se à vontade para entrar em contato comigo me enviando sugestões e seus portfolios para que eu possa dar uma olhada também.
-                    <form class="contact-form" action="mailto:seuemail@example.com" method="post" enctype="text/plain">
-                        <input type="text" name="nome" placeholder="Nome" required><br>
-                        <input type="email" name="email" placeholder="Email" required><br>
-                        <textarea name="mensagem" placeholder="Mensagem" rows="4" required></textarea><br>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+.container-table {
+    width: 100%;
+    margin-bottom: 20px; /* Adiciona espaçamento entre a tabela e as seções */
+}
+
+.container-table td {
+    vertical-align: top;
+}
+
+.section-separator {
+    border-top: 2px solid #ccc; /* Adiciona uma linha divisória entre as seções */
+    margin-top: 20px; /* Espaçamento acima da linha divisória */
+}
+
+.section-list {
+    width: 100%;
+    text-align: center;
+    font-size: 20px; /* Tamanho menor de fonte */
+}
+
+.section-list td {
+    padding: 5px; /* Espaçamento interno das células */
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section-content {
+    margin-bottom: 20px;
+}
+
+.left-section, .right-section {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.left-section {
+    text-align: left;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.contact-form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.highlight-section, .section-title:nth-child(1), .section-title:nth-child(3), .section-title:nth-child(5) {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+.highlight-section.contact-section {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: "Roboto", Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.right-section .highlight-section {
+    text-align: center;
+}
