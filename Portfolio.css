@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia - Desenvolvedor Web</title>
+    <link rel="stylesheet" type="text/css" href="Portfolio.css">
+</head>
+<body>
+    <div class="background-container">
+        <!-- Tabela no topo da página -->
+        <table class="container-table section-list">
+            <tr>
+                <td>Inicio</td>
+                <td>Sobre mim</td>
+                <td>Habilidades</td>
+                <td>Projetos</td>
+                <td>Contate-me</td>
+            </tr>
+        </table>
+
+        <!-- Conteúdo da página -->
+        <table class="container-table">
+            <tr>
+                <td>
+                    <!-- Imagem circular -->
+                    <img class="profile-image" src="fotodeperfil.jpg" alt="Foto de perfil">
+                </td>
+                <td>
+                    <div class="container">
+                        <div class="section-title">Oi, eu sou a Natalia</div>
+                        <div class="section-content">Uma desenvolvedora web que busca sempre se aprimorar e que almeja inovar a área de tecnologia.</div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <!-- Seções restantes... -->
+        <div class="container">
+            <div class="section-title">Sobre mim</div>
+            <div class="section-content">Muito esforçada e curiosa, estou sempre à procura de novos desafios e aventuras para estimular minha mente.</div>
+            
+            <div class="left-section">
+                <div class="highlight-section">Me conheça mais!</div>
+                <div class="section-content">
+                    <br>Ainda estou no início da minha jornada como desenvolvedora web, adentrando no mundo da programação. Comecei recentemente a me interessar por programação em si, embora sempre tenha sido muito ligada à área de tecnologia. Desde muito cedo tive facilidade em mexer com smartphones, computadores e video-games. Quando mais nova, me aventurei com outras áreas, como edificações e restaurante e bar; até perceber que na tecnologia é onde realmente me encontro.<br><br>
+                    Tenho somente 22 anos e cursei apenas 3 semestres do curso de Ciências da Computação na faculdade Estácio de Sá. <br>
+                    Estou aberta a oportunidades de trabalho onde eu possa contribuir, aprender e crescer. Caso queira trocar alguma experiência, por favor entre em contato comigo através do meu email <strong>SantosNatalia2001@gmail.com </strong> ou do meu <a href="https://www.instagram.com/dsantosnat/">Instagram</a>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <div class="highlight-section">Habilidades</div>
+                <div class="section-content">
+                    <p style="text-align: center;">HTML | JavaScript | CSS</p>
+                </div>
+            </div>
+
+            <div class="highlight-section">Projetos</div>
+            <div class="section-content">
+                <ol>
+                    <li><a href="index.html">Projeto 1</a></li>
+                </ol>
+            </div>
+
+            <div class="highlight-section contact-section">
+                <div class="section-title">Contate-me</div>
+                <div class="section-content">
+                    <br>
+                    Sinta-se à vontade para entrar em contato comigo me enviando sugestões e seus portfolios para que eu possa dar uma olhada também.
+                    <form class="contact-form" action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+                        <input type="text" name="nome" placeholder="Nome" required><br>
+                        <input type="email" name="email" placeholder="Email" required><br>
+                        <textarea name="mensagem" placeholder="Mensagem" rows="4" required></textarea><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
